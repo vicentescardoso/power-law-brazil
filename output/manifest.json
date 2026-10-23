@@ -1,0 +1,49 @@
+{
+  "python": "3.14.8",
+  "platform": "Linux-7.2.11-200.fc44.x86_64-x86_64-with-glibc2.43",
+  "packages": {
+    "numpy": "2.3.4",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "matplotlib": "3.10.7"
+  },
+  "source_workbooks": {
+    "data/raw/painel_valor_1999_2024.xlsx": "303a9e3e21a105c1ee65ef00fe7cf38a90b505ff9589f555f25fc977c6be211c",
+    "data/raw/historico_valor_2001_2025.xlsx": "cd9b82bcab51cab125fc5c088f5532224e7806f49fb94ffdaea4ee481412e24b",
+    "data/raw/valor_2020_edition.xlsx": "f31140e19c1c111eac4377ff33fb0d692b737ffb90906f08dca531e7e34d9f35"
+  },
+  "panel": {
+    "first_year": 1999,
+    "last_year": 2024,
+    "firms_per_year": 1000,
+    "rows": 26000
+  },
+  "repairs": {
+    "fiscal_2012_2014": "rebuilt from historical workbook sheets 2013, 2014, 2015",
+    "fiscal_2019_rank_779": "SG Com\u00e9rcio Exterior, MG, R$ 657.0 million, recovered from the 2020 annual edition"
+  },
+  "seeds": {
+    "historical_lmp": 20260701,
+    "historical_lmz": 20260702,
+    "pwl_base": 20260923,
+    "zipf_bootstrap": 20260908
+  },
+  "replications": {
+    "historical_tests": 999,
+    "pwl": 19999,
+    "zipf_bootstrap": 20000,
+    "break_bootstrap": 20000
+  },
+  "outputs": [
+    "cleaned_panel.csv",
+    "tables/table_1.csv",
+    "tables/table_2.csv",
+    "tables/table_3.csv",
+    "tables/table_4.csv",
+    "tables/table_5.csv",
+    "tables/table_6.csv",
+    "trend_break.csv",
+    "figure1.png",
+    "figure1.pdf"
+  ]
+}
